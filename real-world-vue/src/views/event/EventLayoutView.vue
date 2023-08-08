@@ -20,7 +20,7 @@ EventService.getEventById(Number(props.id))
     <div v-if="event">
     <h1>{{ event.title }}</h1>
     <div id ="nav">
-        <router-link :to="{ name: 'event-details', params:{ id }}"> 
+        <router-link :to="{ name: 'event-detail', params:{ id }}"> 
         Details</router-link>|
         <router-link :to="{ name: 'event-register', params:{ id }}">
         Register</router-link>|
